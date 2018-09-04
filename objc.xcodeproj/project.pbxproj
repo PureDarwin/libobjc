@@ -566,7 +566,7 @@
 					"$(DSTROOT)/usr/local/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
-					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"$(inherited)",
 				);
 				INSTALL_PATH = /usr/lib;
 				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
@@ -638,7 +638,7 @@
 					"$(DSTROOT)/usr/local/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
-					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"$(inherited)",
 				);
 				INSTALL_PATH = /usr/lib;
 				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
