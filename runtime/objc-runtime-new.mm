@@ -2347,6 +2347,7 @@ void _read_images(header_info **hList, uint32_t hCount, int totalClasses, int un
 # if TARGET_OS_OSX
         // Disable non-pointer isa if the app is too old
         // (linked before OS X 10.11)
+        const uint32_t DYLD_MACOSX_VERSION_10_11 = 0x101100;
         if (dyld_get_program_sdk_version() < DYLD_MACOSX_VERSION_10_11) {
             DisableNonpointerIsa = true;
             if (PrintRawIsa) {

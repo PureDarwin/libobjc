@@ -544,6 +544,7 @@ map_images_nolock(unsigned mhCount, const char * const mhPaths[],
         // Disable +initialize fork safety if the app has a
         //   __DATA,__objc_fork_ok section.
 
+        const uint32_t DYLD_MACOSX_VERSION_10_13 = 0x101300;
         if (dyld_get_program_sdk_version() < DYLD_MACOSX_VERSION_10_13) {
             DisableInitializeForkSafety = true;
             if (PrintInitializing) {
