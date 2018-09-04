@@ -83,6 +83,7 @@ class nocopy_t {
 #   include <syslog.h>
 #   include <unistd.h>
 #   include <pthread.h>
+#   include <pthread/qos_private.h>
 #   include <crt_externs.h>
 #   undef check
 #   include <Availability.h>
