@@ -569,8 +569,7 @@
 					"$(inherited)",
 				);
 				INSTALL_PATH = /usr/lib;
-				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
-				"ORDER_FILE[sdk=iphonesimulator*]" = "";
+				ORDER_FILE = "$(SRCROOT)/libobjc.order";
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
 					"$(OTHER_CFLAGS)",
@@ -641,8 +640,7 @@
 					"$(inherited)",
 				);
 				INSTALL_PATH = /usr/lib;
-				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
-				"ORDER_FILE[sdk=iphonesimulator*]" = "";
+				ORDER_FILE = "$(SRCROOT)/libobjc.order";
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
 					"$(OTHER_CFLAGS)",
