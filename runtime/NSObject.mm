@@ -1085,6 +1085,7 @@ public:
     {
         // Error. For bincompat purposes this is not 
         // fatal in executables built with old SDKs.
+        const uint32_t DYLD_MACOSX_VERSION_10_12 = 0x101200;
 
         if (DebugPoolAllocation || sdkIsAtLeast(10_12, 10_0, 10_0, 3_0, 2_0)) {
             // OBJC_DEBUG_POOL_ALLOCATION or new SDK. Bad pop is fatal.
