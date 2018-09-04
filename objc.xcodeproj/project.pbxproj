@@ -575,29 +575,6 @@
 					"-fdollars-in-identifiers",
 					"$(OTHER_CFLAGS)",
 				);
-				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
-					"-lc++abi",
-					"-Wl,-segalign,0x4000",
-					"-Xlinker",
-					"-sectalign",
-					"-Xlinker",
-					__DATA,
-					"-Xlinker",
-					__objc_data,
-					"-Xlinker",
-					0x1000,
-					"-Xlinker",
-					"-interposable_list",
-					"-Xlinker",
-					interposable.txt,
-				);
-				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
-					"-lc++abi",
-					"-Xlinker",
-					"-interposable_list",
-					"-Xlinker",
-					interposable.txt,
-				);
 				"OTHER_LDFLAGS[sdk=macosx*]" = (
 					"-lCrashReporterClient",
 					"-lc++abi",
@@ -613,6 +590,8 @@
 					"-interposable_list",
 					"-Xlinker",
 					interposable.txt,
+					"-Xlinker",
+					"-no_warn_inits",
 				);
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = objc.A;
@@ -646,29 +625,6 @@
 					"-fdollars-in-identifiers",
 					"$(OTHER_CFLAGS)",
 				);
-				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
-					"-lc++abi",
-					"-Wl,-segalign,0x4000",
-					"-Xlinker",
-					"-sectalign",
-					"-Xlinker",
-					__DATA,
-					"-Xlinker",
-					__objc_data,
-					"-Xlinker",
-					0x1000,
-					"-Xlinker",
-					"-interposable_list",
-					"-Xlinker",
-					interposable.txt,
-				);
-				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
-					"-lc++abi",
-					"-Xlinker",
-					"-interposable_list",
-					"-Xlinker",
-					interposable.txt,
-				);
 				"OTHER_LDFLAGS[sdk=macosx*]" = (
 					"-lCrashReporterClient",
 					"-lc++abi",
@@ -684,6 +640,8 @@
 					"-interposable_list",
 					"-Xlinker",
 					interposable.txt,
+					"-Xlinker",
+					"-no_warn_inits",
 				);
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = objc.A;
