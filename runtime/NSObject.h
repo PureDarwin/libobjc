@@ -91,8 +91,8 @@ OBJC_EXPORT
 
 + (NSMethodSignature *)instanceMethodSignatureForSelector:(SEL)aSelector OBJC_SWIFT_UNAVAILABLE("");
 
-- (BOOL)allowsWeakReference UNAVAILABLE_ATTRIBUTE;
-- (BOOL)retainWeakReference UNAVAILABLE_ATTRIBUTE;
+- (BOOL)allowsWeakReference OBJC_WEAK_REFERENCE_UNAVAILABLE;
+- (BOOL)retainWeakReference OBJC_WEAK_REFERENCE_UNAVAILABLE;
 
 + (BOOL)isSubclassOfClass:(Class)aClass;
 

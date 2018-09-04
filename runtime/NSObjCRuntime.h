@@ -30,4 +30,10 @@ typedef unsigned int NSUInteger;
 #endif
 #endif
 
+#if OBJC_WEAK_REFERENCE_IMPL
+#define OBJC_WEAK_REFERENCE_UNAVAILABLE /* nothing */
+#else
+#define OBJC_WEAK_REFERENCE_UNAVAILABLE UNAVAILABLE_ATTRIBUTE
+#endif
+
 #endif
