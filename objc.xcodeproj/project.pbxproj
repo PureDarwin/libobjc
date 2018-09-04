@@ -94,6 +94,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F09EEC5213F426D000BD3FB /* objc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = objc.xcconfig; path = xcconfig/objc.xcconfig; sourceTree = "<group>"; };
 		393CEABF0DC69E3E000B69DE /* objc-references.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-references.mm"; path = "runtime/objc-references.mm"; sourceTree = "<group>"; };
 		393CEAC50DC69E67000B69DE /* objc-references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-references.h"; path = "runtime/objc-references.h"; sourceTree = "<group>"; };
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
@@ -278,6 +279,7 @@
 		838485B20D6D67F900CEA253 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1F09EEC5213F426D000BD3FB /* objc.xcconfig */,
 				830F2AA50D7394C200392440 /* markgc.cpp */,
 				838485B40D6D683300CEA253 /* APPLE_LICENSE */,
 				83CE671D1E6E76B60095A33E /* interposable.txt */,
@@ -547,6 +549,7 @@
 /* Begin XCBuildConfiguration section */
 		1DEB914B08733D8E0010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F09EEC5213F426D000BD3FB /* objc.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_HEADERS_RUN_UNIFDEF = YES;
@@ -620,6 +623,7 @@
 		};
 		1DEB914C08733D8E0010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F09EEC5213F426D000BD3FB /* objc.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_HEADERS_RUN_UNIFDEF = YES;
