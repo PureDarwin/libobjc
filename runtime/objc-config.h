@@ -56,7 +56,7 @@
 #endif
 
 // Define SUPPORT_PREOPT=1 to enable dyld shared cache optimizations
-#if TARGET_OS_WIN32  ||  TARGET_OS_SIMULATOR
+#if (TARGET_OS_WIN32  ||  TARGET_OS_SIMULATOR) || defined(__PUREDARWIN__)
 #   define SUPPORT_PREOPT 0
 #else
 #   define SUPPORT_PREOPT 1
