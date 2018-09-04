@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		837F67A81A771F63004D34FA /* objc-simulator */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 837F67A91A771F63004D34FA /* Build configuration list for PBXAggregateTarget "objc-simulator" */;
-			buildPhases = (
-			);
-			dependencies = (
-				837F67AD1A771F6E004D34FA /* PBXTargetDependency */,
-			);
-			name = "objc-simulator";
-			productName = objc_simulator;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		393CEAC00DC69E3E000B69DE /* objc-references.mm in Sources */ = {isa = PBXBuildFile; fileRef = 393CEABF0DC69E3E000B69DE /* objc-references.mm */; };
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
@@ -106,16 +92,6 @@
 		E8923DA4116AB2820071B552 /* a2a3-blocktramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = E8923D9F116AB2820071B552 /* a2a3-blocktramps-x86_64.s */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		837F67AC1A771F6E004D34FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC0620554660B00DB518D;
-			remoteInfo = objc;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		393CEABF0DC69E3E000B69DE /* objc-references.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-references.mm"; path = "runtime/objc-references.mm"; sourceTree = "<group>"; };
@@ -457,11 +433,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = NO;
 				LastUpgradeCheck = 0940;
-				TargetAttributes = {
-					837F67A81A771F63004D34FA = {
-						CreatedOnToolsVersion = 6.3;
-					};
-				};
 			};
 			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "objc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -478,7 +449,6 @@
 			projectRoot = "";
 			targets = (
 				D2AAC0620554660B00DB518D /* objc */,
-				837F67A81A771F63004D34FA /* objc-simulator */,
 			);
 		};
 /* End PBXProject section */
@@ -573,14 +543,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		837F67AD1A771F6E004D34FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC0620554660B00DB518D /* objc */;
-			targetProxy = 837F67AC1A771F6E004D34FA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB914B08733D8E0010E9CD /* Debug */ = {
@@ -862,22 +824,6 @@
 			};
 			name = Release;
 		};
-		837F67AA1A771F63004D34FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		837F67AB1A771F63004D34FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -895,15 +841,6 @@
 			buildConfigurations = (
 				1DEB914F08733D8E0010E9CD /* Debug */,
 				1DEB915008733D8E0010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		837F67A91A771F63004D34FA /* Build configuration list for PBXAggregateTarget "objc-simulator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				837F67AA1A771F63004D34FA /* Debug */,
-				837F67AB1A771F63004D34FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
